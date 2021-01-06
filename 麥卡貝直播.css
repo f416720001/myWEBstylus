@@ -1,0 +1,162 @@
+/* 上方bar移除 */
+header {
+    display: none;
+    position: absolute;
+}
+
+/* 影片滿板 */
+main {
+    height: 100%;
+    width: 100%;
+    background: white;
+}
+.player {
+    margin: 0;
+    margin-top: -10px;
+    height: 104%;
+}
+
+#online,
+#view {
+    background: black;
+    color: #7FFFD4;
+    left: 0;
+    padding: 5px;
+    margin: 0px;
+    opacity: 0.5;
+}
+
+
+/* 聊天室 */
+.chatroom {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    background: rgba(100, 100, 100, 0);
+    min-height: 100px;
+    height: 230px;
+    width: 80%;
+}
+
+#chat-trigger-icon {
+    height: 40px;
+}
+#message {
+    max-height: 40px !important;
+    height: 40px !important;
+    font-size: 30px !important;
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+
+#chat-list > li {
+    margin-bottom: 15px;
+    background-color: rgba(0, 7, 17, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    animation-name: GeminiXiang;
+    animation-duration: 2s;
+}
+
+#chat-list > li > span {
+    font-size: 20px;
+    color: black;
+}
+@keyframes GeminiXiang {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.chatNameInView {
+    color: white !important;
+    font-weight: 900;
+}
+.chat-text {
+    margin: 0 20px;
+    border: none;
+}
+
+.channel-live-chat {
+    height: calc(100% - 115px);
+    border: none;
+}
+
+#chat-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+#chat-list > li {
+    flex-grow: 0;
+    margin: 5px;
+}
+
+/* 留言輸入位置 */
+#chat-text-area {
+    padding: 0px;
+}
+.chat-text-box {
+    position: fixed;
+    top: 6px;
+    right: 0px;
+    width: 19%;
+    height: 130px;
+}
+#chat-text-area,
+.chat-text {
+    border-top: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+#chat-text-area {
+    cursor: pointer;
+    opacity: 0.2;
+}
+#chat-text-area:hover {
+    opacity: 1;
+}
+
+/* icon及貼圖位置調整 */
+#chat-text-area > i {
+    margin-left: 27px;
+}
+.colorPanel-overflow {
+    bottom: -140px;
+}
+.stickOverflow {
+    bottom: -240px;
+}
+.chat-text-nickname,
+.danmu-text {
+    top: 100px;
+}
+
+/* 懸浮icon */
+.emojis {
+    right: 2%;
+    bottom: 45%;
+}
+.emoji-block {
+    bottom: 40px;
+}
+
+/* 影片控制bar */
+#buttonbar {
+    bottom: 50px;
+}
+#multiview-area div.view {
+    margin-bottom: 40px;
+}
+
+/* 左下斗內 */
+.donate {
+    position: fixed;
+    bottom: 0px;
+    opacity: 0.5;
+}
+
+/* 左側清單隱藏 */
+.chList-trigger {
+    display: none;
+}
