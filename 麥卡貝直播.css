@@ -1,4 +1,4 @@
-/* 上方bar移除 */
+﻿/* 上方bar移除 */
 header {
     display: none;
     position: absolute;
@@ -12,22 +12,26 @@ main {
 }
 .player {
     margin: 0;
-    margin-top: -10px;
+    margin-top: -22px;
     height: 104%;
 }
 
+
+
+/* 聊天室 */
 #online,
 #view {
     background: black;
     color: #7FFFD4;
-    left: 0;
+    opacity: 0.7;
     padding: 5px;
     margin: 0px;
-    opacity: 0.5;
+    border: none;
+}
+.icon-eye, .icon-viewing {
+    display: none;
 }
 
-
-/* 聊天室 */
 .chatroom {
     position: fixed;
     top: 0px;
