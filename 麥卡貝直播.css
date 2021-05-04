@@ -1,4 +1,8 @@
-﻿/* 上方bar移除 */
+main {
+    background-color: black !important;
+}
+
+/* 上方bar移除 */
 header {
     display: none;
     position: absolute;
@@ -7,7 +11,7 @@ header {
 /* 影片滿板 */
 main {
     height: 100%;
-    width: 100%;
+    max-width: 100vw;
     background: white;
 }
 .player {
@@ -163,4 +167,14 @@ main {
 /* 左側清單隱藏 */
 .chList-trigger {
     display: none;
+}
+
+/* Youtube 重播畫面 */
+.vod_player {
+    margin: 100px auto !important;
+    width: 100%;
+    height: calc(100% - 225px);
+}
+.html5-main-video {
+    width: 100vw !important;
 }
