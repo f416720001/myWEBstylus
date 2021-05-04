@@ -11,7 +11,9 @@ header {
 /* 影片滿板 */
 main {
     height: 100%;
+    width: 100vw;
     min-width: 100vw;
+    max-width: 100vw;
     background: white;
 }
 .player {
@@ -90,6 +92,7 @@ main {
 .channel-live-chat {
     height: calc(100% - 115px);
     border: none;
+    overflow-y: hidden;
 }
 
 #chat-list {
