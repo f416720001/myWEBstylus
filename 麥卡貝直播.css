@@ -11,7 +11,7 @@ header {
 /* 影片滿板 */
 main {
     height: 100%;
-    max-width: 100vw;
+    min-width: 100vw;
     background: white;
 }
 .player {
